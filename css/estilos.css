@@ -1,0 +1,2162 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+:root{
+  --red-color:#A40101;
+  --blue-color:#2CA3AB;
+  --grey-color:#C4C4C4;
+  --orange-color:#F3610E;
+  --darkblue-color:#1D1B45;
+  --lightblue-color:#a8dde0;
+  --dark-color:#191919;
+  --blue2-color:rgba(41, 82, 160, 0.972);
+  --white-color:#FFFFFF;
+  --darkorange-color:#da5f18;
+}
+*{
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+/*Estilos Index*/
+.headerhome{
+  display: flex;
+  flex-direction: column-reverse;
+  border-top: 3px solid var(--dark-color);
+  text-align: center;
+
+}
+
+.partuno{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  text-align: center;
+  margin: 1px auto;
+}
+
+.prtcontenido{
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.partuno h3{
+  text-align: justify;
+  color: var(--dark-color);
+  font-size: 12px;
+  font-weight: 300;
+  padding: 0 10px;
+  margin: 1px;
+}
+
+.prtuno i{
+  color:var(--white-color);
+  background-color: var(--darkorange-color);
+  border-radius: 50%;
+  padding: 7px;
+  animation: tel 0.5s infinite;
+}
+
+@keyframes tel{
+  0%{transform: rotateZ(5deg);}
+  50%{transform: rotateZ(-5deg);}
+  100%{transform: rotate(5deg);}
+
+}
+
+.prtuno{
+  display: flex;
+  margin-top: 1rem;
+  align-items: center;
+}
+
+.botonlog{
+  background-color: var(--blue2-color);
+  color: var(--white-color);
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 13px;
+  margin:10px auto;
+  cursor: pointer;
+  border: none;
+}
+
+.botonlog i{
+  padding-left: 5px;
+}
+
+.log{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  position: relative;
+}
+.cajalogo{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 1.5rem auto auto;
+}
+
+.cajalogo img{
+  width: 70%;
+}
+.log i{
+  font-size:50px;
+  color:var(--darkorange-color);
+  margin-bottom:25px;
+  animation: salto 2s infinite;
+}
+
+@keyframes salto {
+  0% { transform: scale(1);}
+  50%{ transform: scale(1.1);}
+  100%{transform: scale(1);}
+}
+
+.franja{
+  position: absolute;
+  width: 70%;
+  border: none;
+  left:25%;
+  top:90px;
+  margin-top: 5px;
+}
+
+.bannerclass{
+  background-image: url(../img/medico-movil.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+#textobanner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 53%;
+  height: 60%;
+}
+
+#textobanner h2{
+  color: var(--orange-color);
+  font-size: 15px;
+  font-weight: 600;
+  margin:5px 5px ;
+}
+
+#textobanner h1{
+  color: var(--dark-color);
+  font-size: 24px;
+  font-weight: 600;
+  margin: 1px;
+}
+
+.btnpeq{
+  width:90%;
+  font-size: 6px;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 4px;
+}
+.franjan{
+  display: flex;
+  contain: content;
+}
+.franjan img{
+  width: 100%;
+}
+
+#corona{
+  background-image: url(../img/4.\ covid.jpeg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+.cajacorona{
+  display: flex;
+  flex-direction: column;
+  background: #f1f1f1da;
+  background-size:cover;
+  contain: content;
+  justify-content: space-around;
+  width: 100%;
+}
+
+#sintomas{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin: 10px auto 0;
+  padding: 5px;
+}
+
+.iconotexto{
+  width: 20px;
+  height: 20px;
+  margin: 0px 5px;
+}
+
+.iconoparrafo{
+  width: 20px;
+  height: 20px;
+}
+
+#corona h3{
+  display: flex;
+  font-size: 15px;
+  align-items: center;
+  justify-content: center;
+  color: var(--darkblue-color);
+  margin: auto;
+}
+
+#sintomas ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.iconolista{
+  width: 15px;
+  height: 15px;
+  margin: 2px 10px;
+}
+#sintomas li{
+  display: flex;
+  align-items: flex-start;
+  font-size: 12px;
+  font-weight: 300;
+  color: var(--dark-color);
+  margin: 0 5px;
+}
+#ayuda{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.ayuda1{
+  text-align: justify;
+}
+
+.ayuda1 p{
+  width: 90%;
+  text-align: justify;
+  color: var(--dark-color);
+  font-size: 12px;
+  font-weight: 300;
+  margin: 5px auto;
+}
+
+.ayuda2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin:auto;
+}
+
+.imgcurso{
+  width: 100px;
+  margin: auto;
+}
+
+.ayuda2 a{
+  margin-bottom: 20px;
+  color: var(--darkblue-color);
+  text-decoration: underline;
+  font-size: 12px;
+}
+
+.secinfo{
+  background-color: var(--dark-color);
+  padding: 10px;
+  padding-top: 10px;
+  margin:0px;
+  border-bottom: 5px solid gray;
+  color: var(--white-color);
+} 
+a{
+  text-decoration: none;
+  font-size: 12px;
+}
+.secinfo1{
+  background-color: var(--dark-color);
+  padding: 10px;
+  padding-top: 10px;
+  margin:0px;
+  border-top: 5px solid var(--dark-color);
+  border-bottom: 5px solid gray;
+  color: var(--white-color);
+} 
+
+.secinfo2{
+  background-color: var(--dark-color);
+  padding: 10px;
+  padding-top: 10px;
+  margin:0px;
+  border-bottom: 10px solid var(--white-color);
+  color: var(--white-color);
+} 
+
+/*Estilos login*/
+.lg{
+  background-image: url(../img/10.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  margin: 70px auto;
+}
+
+.boton1{
+    font-size: 12px;
+    background-color: var(--darkblue-color);
+    border: 2px solid var(--blue-color);
+    border-radius: 10px;
+    color: var(--white-color);
+    padding: 5px 5px;
+    text-align: center;
+    width: 40%;
+    cursor: pointer;
+    font-weight: 400;
+    margin-left:55%;
+}
+
+.contenedor2{
+  box-shadow: 1px  1px 6px var(--dark-color);
+  border-radius: 17px;
+  margin-top:15px;
+}
+
+.logo {
+  width: 100%;
+  background-color: var(--lightblue-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-top-left-radius: 13px;
+  border-top-right-radius: 13px;
+}
+
+.logo img {
+  margin: 4rem auto 0;
+  width: 90%;
+}
+
+.logo h2{
+    font-weight:500;
+    font-size: 16px;
+    color: var(--dark-color);
+    margin-bottom: 2rem;
+}
+
+.login {
+  background-color: var(--white-color);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-bottom-left-radius: 13px;
+  border-bottom-right-radius: 13px;
+}
+
+.formu{
+    height: 90%;
+    width: 90%;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.npt{
+    width: 85%;
+    height: 28px;
+    background-color: rgba(143, 222, 228, 0.144);
+    border: 1px solid var(--blue-color);
+    border-radius:9px;
+    padding-left: 5px;
+    box-sizing:border-box;
+}
+
+.lbl{
+  width: 85%;
+  font-size: 15px;
+  text-align: center;
+  padding: 5px 20px; 
+  font-weight: 500;
+  margin-top: 15px;
+  color: var(--dark-color);
+}
+
+#boton2{
+  width: 85%;
+  background-color:var(--darkorange-color);
+  border: 2px solid var(--blue-color);
+  border-radius: 9px;
+  text-align: center;
+  cursor: pointer;
+  padding: 8px 20px ;
+  margin-bottom: 30px;
+} 
+
+  #boton2 a{
+  font-size: 13px;
+  text-decoration: none;
+  color: var(--white-color);
+  font-weight: 500;
+  }
+
+.formu a{
+  font-weight: 600;
+  font-size:12px;
+  cursor: pointer;
+  color: var(--dark-color);
+  text-decoration: underline;
+}
+
+/*Estilos dashboard*/
+#contdsh{
+  display: flex;
+  flex-direction: column;
+}
+
+.bardsh{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--dark-color);
+  width: 100%;
+  padding: 15px;
+}
+
+.bardsh img{
+  margin:20px auto 10px;
+}
+
+.grupodsh{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  width: 100%;
+}
+
+.logoboton{
+  display: flex;
+}
+
+.botondsh{
+  background-color: var(--grey-color);
+  margin: 10px 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px;
+  border: 3px solid var(--darkorange-color);
+  border-radius: 10px;
+}
+
+.botondsh a{
+  color: var(--dark-color);
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.contenidodsh{
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(238, 237, 237, 0.74);  
+  background-size: cover;
+  width: 100%;
+  height:72vh;
+  overflow: hidden;
+}
+
+.grupocontenido{
+  text-align: center;
+  position: relative;
+}
+
+#btnuser{
+  background: linear-gradient(80deg, rgb(172, 172, 172), rgb(235, 235, 235),rgb(172, 172, 172),rgb(172, 172, 172),rgb(235, 235, 235),rgb(172, 172, 172),rgb(172, 172, 172),rgb(235, 235, 235),rgb(172, 172, 172));
+  width: 55%;
+  margin: 10px auto;
+  height: 50px;
+  border-radius: 10px;
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#btnuser i{
+  color: var(--dark-color);
+  margin-right: 10px;
+  background-color: var(--white-color);
+  border-radius: 50%;
+  font-size: 15px;
+  padding: 10px;
+  border: 3px solid var(--darkorange-color);
+}
+
+#btnuser a{
+  color: var(--dark-color);
+  margin-right: 10px;
+}
+
+.welcome{
+  color: var(--darkorange-color);
+  font-size:18px;
+  margin: 25px auto;
+}
+
+.welcome h1{
+  font-weight: 500;
+  margin: auto;
+}
+
+.search{ 
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.search input{
+  width:80%;
+  border:none;
+  border-bottom: 2px solid var(--darkblue-color);
+  margin: 25px 10px;
+  font-size: 12px;
+  background:none;
+  text-align: left;
+}
+
+.bsearch{
+  display: flex;
+}
+
+.bsearch a{
+  display: flex;
+}
+
+.bsearch i{
+  background-color: var(--darkblue-color);
+  margin: 0 5px ;
+  font-size: 12px;
+  width: 100%;
+  padding: 5px 10px;
+  color: var(--white-color);
+  border-radius: 5px;
+  border:3px solid var(--blue-color);
+}
+
+.imgsearch{
+  position: relative;
+}
+
+.imguerreros{
+  position: absolute;
+  right: 10px;
+  top:13vh;
+  transform: rotate(10deg);
+  opacity: 0.6;
+  width: 100%;
+  max-width:180px;
+  animation: fotom 1s 5 ease-in-out;
+}
+
+@keyframes fotom {
+  0%{
+  transform: translateY(-15px);
+}
+  100%{
+    transform: translateY(0px);
+  }
+}
+
+.footerdhs{
+  display: flex;
+  width: 100%;
+  position: absolute;
+  top:69.7vh;
+}
+.footerdhs img{
+  width: 100%;
+}
+
+/*Estilo formpacientes*/
+
+.encabezado{
+  background-color: var(--dark-color);
+  display: flex;
+  flex-direction: column;
+  padding: 30px  5px;
+  justify-content: space-between;
+}
+
+.encabezado img{
+  margin: auto;
+}
+
+#btnform{
+  display: flex;
+  margin: auto;
+}
+
+.btnformuno{
+  width:30px;
+  height:30px;
+  margin: 5px;
+  border-radius: 50%;
+  font-size:15px;
+  border: 2px solid var(--blue-color);
+  color: var(--dark-color);
+  cursor: pointer;
+  text-align: center;
+}
+
+.btnformuno i{
+  animation: headf 10s infinite;
+}
+
+@keyframes headf {
+0%{
+  transform:rotatey(0deg);
+}
+100%{transform: rotatey(360deg);}
+}
+
+.fotohead img{
+  width: 100%;
+  border-bottom: 6px solid var(--blue-color);
+}
+
+#tituno{
+  width: 98%;
+  background-color: var(--darkblue-color);
+  text-align: center;
+  border-radius: 4px;
+  color:white;
+  font-weight: 100;
+  padding: 5px;
+  font-size:20px;
+  margin:5px auto 10px;
+}
+
+#borform{
+border: 1px solid var(--darkblue-color);
+margin: 1px auto 10px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+width: 97%;
+}
+
+#cajaf{
+  display: flex;
+  justify-content: center;
+  background-color: var(--grey-color);
+  width: 90%;
+  margin: 30px auto;
+  border-radius: 10px;
+  border: 1px solid var(--darkblue-color);
+  padding: 15px;
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: var(--blue-color);
+  width: 99%;
+  border: 1px solid var(--darkblue-color);
+  border-radius: 4px;
+  height: 30px;
+  margin: auto; 
+  width: 100%; 
+}
+
+form{
+  width: 100%;
+}
+
+.bar img {
+  width: 15px;
+  height: 20px;
+} 
+
+.texto{
+  position: relative;
+}
+.icono{
+  position: absolute;
+  left: -32px;
+  top: 12px;
+}   
+  
+.iconodos{
+  position: absolute;
+  left: -20px;
+  top: 11px;
+  }  
+  
+.bar1 {
+  font-size: 14px;
+  font-weight: 100;
+  }
+
+  .initial{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 20px ;
+  }
+  
+.initial input{
+  width:100%;
+  height: 30px;
+  border: 1px solid #2ca3abd5;
+  margin: 10px auto;
+  padding: 0 10px;
+  color: gray;
+  font-size: 14px;
+}
+
+.datosp{
+  width: 100%;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+}
+
+.datosp input{
+  width: 100%;
+  height: 30px;
+  border: 1px solid #2ca3abd5;
+  margin: 10px 20px ;
+  padding: 0 10px;
+  color: gray;
+  font-size: 14px;
+}
+
+.datosp select{
+  width: 100%;
+  height: 30px;
+  border: 1px solid #2ca3abd5;
+  margin: 10px 20px ;
+  color: gray;
+  padding: 0 8px;
+  font-size: 14px;
+}
+
+.pr{
+  width: 100%;
+  display: flex;
+  flex-wrap:wrap;
+}
+
+.pr input{
+  width: 100%;
+  height: 30px;
+  border: 1px solid #2ca3abd5;
+  margin: 10px 20px ;
+  padding: 0 10px;
+  color: gray;
+  font-size: 14px;
+}
+
+.pr select{
+  width:100%;
+  height: 30px;
+  border: 1px solid #2ca3abd5;
+  margin: 10px 20px ;
+  padding: 0 10px;
+  color: gray;
+  font-size: 14px;
+}
+
+.radio{
+  font-size: 14px;
+  color: gray;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.radio label{
+  width: 100%;
+  height: 15%;
+  margin: 5px auto ;
+  padding: 0 5px;
+  color: gray;
+  text-align: justify;
+  font-size: 14px;
+}
+
+.opradio{
+  width: 10%;
+  display:flex ;
+  align-items: center;
+  justify-content: space-around;
+  margin:2px auto ;
+  padding: 10px;
+}
+
+.opradio input{
+  margin:auto 10px auto 5px;
+}
+
+#borform button{
+  margin: 5px auto 40px ;
+  background-color: var(--darkorange-color);
+  width:30%;
+  color: var(--white-color);
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 14px;
+  font-weight: 100;
+}
+
+#ftform{
+  display: flex;
+  width: 100%;
+  height: 60px;
+  background-color: var(--dark-color);
+  color: var(--white-color);
+  align-items:flex-start;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 100;
+}
+
+/*Estilos pacientes*/
+.pacien{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.marco{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width:90%;
+  margin-top: 20px;
+}
+
+.navprin{
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.btnagregar{
+  background-color:var(--darkorange-color);
+  color: var(--white-color);
+  border:none;
+  padding: 10px 5px;
+  border-radius: 7px;
+  cursor: pointer;
+  height: 35px;
+  width: 40%;
+  font-size: 13px;
+  margin: 5px auto;
+}
+
+.btnagregar i{
+  padding-left: 5px;
+}
+
+.barbus{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.barbus input {
+  border: 2px solid var(--blue-color);
+  border-radius: 5px;
+  height: 35px;
+  font-size: 12px;
+  margin-right: 5px;
+  width: 60%;
+  padding: 5px;
+}
+
+.barbus i{
+  background-color: var(--darkblue-color);
+  font-size: 18px;
+  width: 100%;
+  height: 35px;
+  padding: 5px 10px;
+  color: var(--white-color);
+  border-radius: 5px;
+  border:3px solid var(--blue-color);
+  cursor: pointer;
+}
+
+.titupac{
+  color: var(--darkblue-color);
+}
+
+.titupac h1{
+  font-size: 25px;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.contt{
+  width: 100%;
+  margin: auto;
+}
+table{
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  display: block;
+  overflow-x: auto;
+  margin: 10px auto;
+}
+
+th{
+  width: 100%;
+  border: 2px solid var(--blue-color);
+  background-color: var(--darkblue-color);
+  color: var(--white-color);
+  font-size: 12px;
+  padding: 5px;
+  border-collapse: collapse;
+}
+
+td{
+  width: 100%;
+  border: 2px solid var(--blue-color);
+  background-color: var(--grey-color);
+  color: var(--darkblue-color);
+  font-size: 12px;
+  padding:5px;
+  border-collapse: collapse;
+}
+
+td i{
+  margin: 0 5px;
+}
+
+.btntable{
+  display: flex;
+  padding: 12px;
+}
+
+.btnazul{
+  background-color: var(--blue-color);
+  border:none;
+  border-radius: 3px;
+  align-items: center;
+  margin-right: 5px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.btnrojo{
+  background-color: var(--red-color);
+  border:none;
+  border-radius: 3px;
+  color: var(--white-color);
+  cursor: pointer;
+  font-size: 12px;
+}
+
+@media screen and (min-width:768px){
+/*Estilos index*/
+  .prtcontenido{
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-top: 5px;
+  }
+
+  .prtuno {
+    margin-right: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+  .prtuno h3{
+    font-size: 14px;
+  }
+
+  .botonlog {
+    font-size: 14px;
+  }
+
+  .log i{
+    font-size:80px;
+    margin-top: 10px;
+  }
+
+  .franja{
+    left:25%;
+    top:150px;
+    margin-top: 5px;
+  }
+
+  .bannerclass{
+  height: 200px;
+  }
+
+  #textobanner{
+    width: 50%;
+    height: 75%;
+  }
+
+  #textobanner h2{
+    font-size: 25px;
+    margin:75px 5px 10px;
+  }
+
+  #textobanner h1{
+    font-size: 35px;
+    margin: 1px auto 15px;
+  }
+  
+  .btnpeq{
+    width:100%;
+    font-size: 14px;
+    border-radius: 12px;
+    margin:auto;
+    padding: 10px;
+  }
+
+  .franjan{
+    width: 100%;
+  }
+
+  .cajacorona{
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .iconotexto, .iconoparrafo{
+    width: 25px;
+    height: 25px;
+  }
+
+  #corona h3{
+font-size: 18px;
+  }
+
+  .iconolista{
+    width: 15px;
+    height: 15px;
+  }
+  #sintomas li{
+    font-size: 14px;
+  }
+
+  #ayuda{
+    margin-top: 13px;
+  }
+
+  .ayuda1 p{
+    font-size: 14px;
+  }
+
+  .imgcurso{
+    width: 120px;
+    margin: auto;
+  }
+
+  .ayuda2 a{
+    margin-bottom: 30px;
+    font-size: 14px;
+  }
+
+  a {
+    font-size: 14px;
+  }
+
+  /*Estilos login*/
+
+  .contenedor {
+    width: 100%;
+    height:64.2vh;
+    margin: 10rem auto;
+  }
+  
+  .boton1{
+      font-size: 13px;
+      width: 35%;
+      margin-left:60%;
+  }
+
+  .contenedor2{
+    border-radius: 17px;
+    margin-top:15px;
+  }
+    
+  .logo img {
+    width: 400px;
+    max-width: 90%;
+  }
+  
+  .logo h2{
+      font-size: 18px;
+      margin-bottom: 3rem;
+  }
+  
+  .lbl{
+    font-size: 17px;
+  }
+  
+  #boton2 a{
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 14px;
+  }
+  
+  .formu a{
+    font-size:13px;
+  }
+
+  /*Estilos dashboard*/
+.bardsh img{
+  width: 400px;
+}
+
+.grupodsh{
+  width: 60%;
+  margin: auto;
+}
+
+.botondsh{
+  width:27%;
+}
+
+.botondsh a{
+  font-size: 14px;
+}
+
+.contenidodsh{
+  height: 74.6vh;
+}
+
+
+#btnuser{
+  width: 25%;
+  margin-top: 10px;
+  margin-right: 30px;
+}
+
+#btnuser i{
+  font-size: 18px;
+}
+
+#btnuser a{
+  font-size: 16px;
+}
+
+.welcome{
+  font-size:20px;
+  margin: 25px auto 15px;
+}
+
+.search{ 
+  flex-direction: row;
+}
+
+.search input{
+  width:60%;
+  font-size: 14px;
+}
+
+.bsearch i{
+  font-size: 14px;
+}
+
+.imguerreros{
+  right: 40px;
+  top:20vh;
+  max-width:280px;
+}
+
+.footerdhs{
+  top:70.3vh;
+}
+/*Estilo formpacientes*/
+
+.encabezado{
+  flex-direction: row;
+}
+
+#btnform{
+  margin-right:10px;
+}
+
+.btnformuno{
+  width:40px;
+  height:40px;
+  margin: 10px;
+  font-size:24px;
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: var(--blue-color);
+  width: 97%;
+  border: 1px solid var(--darkblue-color);
+  border-radius: 4px;
+  height: 30px;
+  margin: auto; 
+}
+
+.icono{
+  left: -190px;
+  top: 14px;
+}   
+  
+.iconodos{
+  left: -155px;
+  top: 14px;
+  }  
+
+.radio label{
+    width: 95%;
+    height: 15%;
+    margin: 5px auto ;
+    padding: 0 5px;
+    color: gray;
+    text-align: justify;
+    font-size: 14px;
+}
+
+/*Estilos pacientes*/
+
+.navprin{
+  flex-direction: row;
+  width: 90%;
+}
+
+.btnagregar{
+  width: 100%;
+  font-size: 14px;
+  margin: 5px auto;
+}
+
+.barbus{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.barbus input {
+  font-size: 14px;
+  width: 100%;
+}
+
+.contt{
+  width: 96%;
+  margin: auto;
+}
+
+th{
+  font-size: 14px;
+}
+
+td{
+  font-size: 14px;
+}
+
+td i{
+  margin: 0 5px;
+}
+
+.btnazul{
+  font-size: 14px;
+}
+
+.btnrojo{
+  font-size: 14px;
+}
+
+}
+
+@media screen and (min-width:1024px){
+  /*Estilos index*/
+
+  .headerhome{
+    flex-direction: column;
+  }
+  
+  .partuno{
+    flex-direction: row;
+    margin-right: 42px;
+    width: 70%;
+  }
+
+  .prtcontenido{
+    flex-direction: row;
+  }
+
+  .partuno h3{
+    text-align: start;
+    font-size: 16px;
+    padding: 0 2px;
+  }
+
+  .prtuno i{
+    margin: 0 1px;
+  }
+  
+  .prtuno{
+    align-items: center;
+    margin-left: 1rem;
+  }
+
+  .botonlog{
+    border-radius: 15px;
+    margin-top: 15px;
+    margin-left: 3rem;
+    width: 90%;
+    font-size: 16px;
+    padding: 10px 5px;
+  }
+  
+  .botonlog i{
+    padding-left: 5px;
+    margin-left: 5px;
+  }
+
+.log{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.cajalogo{
+  display: flex;
+  width: 30%;
+  justify-content: start;
+  margin: 0;
+}
+
+.cajalogo img{
+  width: 100%;
+  margin-left: 20px;
+}
+
+.log i{
+  font-size:60px;
+  margin-bottom:35px;
+}
+
+.franja{
+  width: 60%;
+  top:20px;
+  left:38%;
+}
+
+.bannerclass{
+  background-image: url(../img/2.\ medico.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 300px;
+}
+
+#textobanner{
+  width: 65%;
+  height: 100%;
+}
+
+#textobanner h2{
+  font-size: 40px;
+  margin:0 5px ;
+}
+
+#textobanner h1{
+  font-size: 50px;
+  margin: 5px;
+}
+
+.btnpeq{
+  width:100%;
+  font-size: 16px;
+  border-radius: 12px;
+  margin: 10px auto;
+  padding: 5px 10px;
+}
+
+#sintomas{
+  width: 50%;
+}
+
+.iconotexto,.iconoparrafo{
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+
+#corona h3{
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.iconolista{
+  width: 20px;
+  height: 20px;
+}
+
+#sintomas li{
+  font-size: 16px;
+  padding: 1px;
+  margin: 10px 20px;
+}
+#ayuda{
+  width: 50%;
+  margin-right: 20px;
+}
+
+.ayuda1 p{
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+.ayuda2{
+  margin-left: 50px;
+}
+
+.imgcurso{
+  width: 150px;
+}
+
+.ayuda2 a{
+  margin-bottom: 40px;
+font-size: 16px;
+}
+
+a{
+font-size: 16px;
+}
+/*Estilos login*/
+.logo img {
+  width: 500px;
+  max-width: 90%;
+}
+
+.boton1{
+  font-size: 14px;
+  border-radius: 10px;
+  padding: 9px 5px;
+  width: 30%;
+  margin-left:68%;
+}
+
+.npt{
+  width: 80%;
+  height: 32px;
+}
+
+.lbl{
+width: 80%;
+font-size: 20px;
+margin-top: 25px;
+}
+
+.login {
+  border-bottom-left-radius: 17px;
+  border-bottom-right-radius: 17px;
+}
+#boton2{
+  width:40%;
+  border-radius:12px;
+  margin-bottom: 40px;
+} 
+
+  #boton2 a{
+  font-size: 16px;
+  }
+
+.formu a{
+  font-size:12px;
+}
+/*Estilos dashboard*/
+#contdsh{
+  flex-direction: row;
+  width: 100%;
+}
+.bardsh{
+  width: 25%;
+  height: 100vh;
+  margin: auto;
+  font-size: 20px;
+  padding: 0%;
+}
+
+.grupodsh{
+  margin: 65px 0px;
+  height: 40%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logoboton{
+  display: flex;
+  margin-top: 20px;
+}
+
+.logoboton img{
+  width: 250px;
+}
+
+.botondsh{
+  padding: 10px;
+  width: 100%;
+}
+
+.botondsh a{
+font-size: 16;
+}
+
+.contenidodsh{
+  flex-direction: column;
+  width: 80%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#btnuser{
+  width: 26%;
+  height: 55px;
+}
+
+#btnuser i{
+  font-size: 20px;
+}
+
+.welcome{
+  color: var(--darkorange-color);
+  font-size:22px;
+  margin: 50px auto;
+}
+
+.search input{
+  width:60%;
+  font-size: 16px;
+  padding: auto 15px;
+}
+
+.bsearch i{
+font-size: 16px;
+padding: auto 15px;
+}
+
+.imguerreros{
+  right: 3vh;
+  top:10vh;
+  max-width:300px;
+}
+
+.footerdhs{
+  top:93.99vh;
+}
+
+/*Estilo formpacientes*/
+.btnformuno{
+  width:50px;
+  height:50px;
+  margin: 10px;
+}
+
+#tituno{
+  width: 98%;
+}
+
+#cajaf{
+  width: 94%;
+}
+
+.initial{
+  flex-direction: row;
+}
+  
+.initial input{
+  width:30%;
+  height: 30px;
+  margin: 15px 35px 15px 0;
+  font-size: 16px;
+}
+
+.bar {
+  width: 99%; 
+}
+
+.icono{
+  left: -350px;
+}   
+  
+.iconodos{
+  left: -320px;
+  }  
+  
+.bar1 {
+  font-size: 16px;
+  }
+
+.datosp{
+  display: flex;
+  flex-wrap:wrap;
+}
+
+.datosp input{
+  width: 47%;
+  margin: 10px;
+  font-size: 16px;
+}
+
+.datosp select{
+  width: 47%;
+  margin: 10px;
+  font-size: 16px;
+}
+
+.pr{
+  width: 100%;
+  display: flex;
+  flex-wrap:wrap;
+}
+
+.pr input{
+  width: 32%;
+  margin: 10px 5px;
+  font-size: 16px;
+}
+
+.pr select{
+  width: 32%;
+  margin: 10px 5px;
+  font-size: 16px;
+}
+
+.radio{
+  font-size: 16px;
+  width: 98%;
+}
+
+.radio label{
+  font-size: 16px;
+}
+
+#borform button{
+  width:15%;
+  padding: 5px;
+  font-size: 16px;
+}
+/*Estilos pacientes*/
+
+.marco{
+  width: 70%;
+  margin-top: 40px;
+}
+
+.navprin{
+  width: 100%;
+}
+
+.btnagregar{
+  width: 100%;
+  font-size: 16px;
+  margin: 5px auto;
+}
+
+.barbus{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.barbus input {
+  font-size: 16px;
+  width: 100%;
+}
+
+.titupac h1{
+  font-size: 30px;
+}
+.contt{
+  width: 100%;
+  margin: 0;
+}
+
+th{
+  font-size: 16px;
+}
+
+td{
+  font-size: 16px;
+}
+
+.btnazul{
+  font-size: 16px;
+  width: 100px;
+  padding: 4px;
+}
+
+.btnrojo{
+  width: 105px;
+  font-size: 16px;
+  padding: 4px;
+}
+}
+
+@media screen and (min-width:1200px){
+  /*Estilos index*/
+  .partuno{
+    margin-left: 18rem;
+    width: 80%;
+  }
+
+  .prtcontenido{
+    flex-basis: 80%;
+  }
+
+  .prtuno{
+    margin: 1rem  6rem;
+  }
+
+  .botonlogin{
+    margin-left: 9rem;
+    margin-right: 1rem;
+    flex-basis: 20%;
+    justify-content: end;
+  }
+
+  .botonlog{
+    width:70%;
+    font-size: 16px;
+    padding: 12px 3px;
+  }
+
+  .cajalogo img{
+    margin-left: 5rem;
+  }
+
+  .franja{
+    width: 60%;
+    top:20px;
+    left:38%;
+  }
+
+  .bannerclass{
+    height: 500px;
+  }
+
+  #textobanner{
+    width: 70%;
+  }
+
+  #textobanner h2{
+    font-size: 50px;
+    margin:1rem 1rem;
+  }
+  
+  #textobanner h1{
+    font-size: 60px;
+    margin: 1rem;
+  }
+
+  .btnpeq{
+    width:100%;
+    border-radius: 14px;
+    margin: 10px auto;
+    padding: 10px 15px;
+  }
+
+  #sintomas{
+    width: 40%;
+  }
+
+  .iconotexto,.iconoparrafo{
+    width: 35px;
+    height: 35px;
+    margin-right: 5px;
+  }
+
+  #corona h3{
+    font-size: 25px;
+  }
+
+  .iconolista{
+    width: 25px;
+    height: 20px;
+  }
+  
+  #sintomas li{
+    font-size: 18px;
+    padding: 1px;
+    margin: 1rem 4rem;
+  }
+  #ayuda{
+    width: 40%;
+    margin-right: 5rem;
+  }
+  
+  .ayuda1 p{
+    font-size: 18px;
+    margin-top: 1.5rem;
+  }
+  
+  .ayuda2{
+    margin-left: 6rem;
+  }
+  
+  .imgcurso{
+    width: 170px;
+  }
+  
+  .ayuda2 a{
+    font-size: 18px;
+  }
+
+  a{
+    font-size: 18px;
+    }
+  
+/*Estilos login*/
+.contenedor {
+  width: 100%;
+  margin-top: 6rem;
+}
+
+.boton1{
+    font-size: 14px;
+    border-radius: 10px;    
+    width: 27%;
+    height: 34px;
+    padding:5px;
+    margin-left: 70%;
+}
+
+.logo {
+  width: 500px;
+  max-width: 100%;
+  height: 254px;
+  border-top-left-radius: 17px;
+  border-top-right-radius: 17px;
+}
+
+.logo img {
+  width: 300px;
+  margin: 5rem auto 10px;
+}
+
+.logo h2{
+    font-size: 20px;
+    margin-bottom: 4rem;
+}
+
+.login {
+  background-color: var(--white-color);
+  width: 100%;
+  border-bottom-left-radius: 17px;
+  border-bottom-right-radius: 17px;
+}
+
+.npt{
+    width: 75%;
+    height: 38px;
+    border-radius: 14px;
+}
+
+.lbl{
+    width: 70%;
+    font-size: 16pt;
+}
+
+#boton2{
+    width: 30%;
+    height: 34px;
+    font-size: 13px;
+    margin-bottom: 30px;
+    } 
+/*Estilos Dashboard*/ 
+.bardsh{
+  width: 20%;
+}
+.grupodsh{
+  height: 35%;
+}
+    
+.logoboton{
+    margin-top: 30%;
+}
+    
+.logoboton img{
+    width: 300px;
+}
+    
+.botondsh{
+  padding: 10px 15px;
+}
+    
+.botondsh a{
+  font-size: 20px;
+}
+
+#btnuser{
+  width: 16%;
+  height: 60px;
+}
+    
+#btnuser i{
+  font-size: 22px;
+}
+    
+.welcome{
+  color: var(--darkorange-color);
+  font-size:24px;
+  padding-right: 50px;
+}
+
+.search input{
+  width:27%;
+  font-size: 18px;
+}
+    
+.bsearch i{
+  font-size: 18px;
+  padding: auto 35px;
+}
+    
+.imguerreros{
+  right: 5vh;
+  top:15vh;
+  max-width:350px;
+}
+    
+.footerdhs{
+  top:91.3vh;
+}
+
+
+/*Estilo formpacientes*/
+
+.btnformuno{
+  width:60px;
+  height:60px;
+  font-size: 30px;
+}
+
+#tituno{
+  width: 99%;
+}
+
+#borform{
+width: 99%;
+}
+
+#cajaf{
+  width: 95%;
+}
+
+.bar {
+  width: 100%; 
+}
+
+.bar img {
+  width: 20px;
+} 
+
+.icono{
+  left: -600px;
+  top: 18px;
+}   
+  
+.iconodos{
+  position: absolute;
+  left: -565px;
+  top: 18px;
+  }  
+  
+.bar1 {
+  font-size: 18px;
+}
+  
+.initial input{
+  width:23%;
+  font-size: 18px;
+}
+
+.datosp input{
+  width: 48%;
+  font-size: 18px;
+}
+
+.datosp select{
+  width: 48%;
+  font-size: 18px;
+}
+
+.pr input{
+  width: 32%;
+  margin: 10px auto;
+  font-size: 18px;
+}
+
+.pr select{
+  width: 32%;
+  margin: 10px auto;
+  font-size: 18px;
+}
+
+.radio{
+  font-size: 18px;
+  width: 100%;
+}
+
+.radio label{
+  font-size: 18px;
+}
+
+#borform button{
+  width:10%;
+  font-size: 18px;
+}
+
+/*Estilos pacientes*/
+.pacien{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.marco{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 70%;
+  margin-top: 50px;
+}
+
+.navprin{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 20px 0 0 0;
+}
+.btnagregar{
+  background-color:var(--darkorange-color);
+  color: var(--white-color);
+  border:none;
+  padding: 10px 10px;
+  border-radius: 7px;
+  cursor: pointer;
+  height: 35px;
+  width: 130px;
+  font-size: 14px;
+}
+
+.btnagregar i{
+  padding-left: 5px;
+}
+
+.barbus input {
+  border: 2px solid var(--blue-color);
+  border-radius: 5px;
+  height: 35px;
+}
+
+.barbus i{
+  background-color: var(--darkblue-color);
+  font-size: 18px;
+  width: 42px;
+  height: 35px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: var(--white-color);
+  border-radius: 5px;
+  border:3px solid var(--blue-color);
+  cursor: pointer;
+}
+
+.titupac{
+  color: var(--darkblue-color);
+  margin-bottom: 20px;
+}
+
+.titupac h1{
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+table{
+  width: 100%;
+  border: 2px solid var(--blue-color);
+  text-align: center;
+  border-collapse: collapse;
+  margin-bottom: 100px;
+}
+
+th{
+  border: 2px solid var(--blue-color);
+  background-color: var(--darkblue-color);
+  color: var(--white-color);
+  padding: 10px;
+  font-size: 14px;
+}
+
+td{
+  border: 2px solid var(--blue-color);
+  background-color: var(--grey-color);
+  color: var(--darkblue-color);
+  padding: 10px;
+  font-size: 14px;
+}
+
+td i{
+  margin: 0 5px;
+}
+.btnazul{
+  background-color: var(--blue-color);
+  border:none;
+  border-radius: 3px;
+  padding: 5px 5px;
+  align-items: center;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.btnrojo{
+  background-color: var(--red-color);
+  border:none;
+  border-radius: 3px;
+  padding: 5px 5px;
+  color: var(--white-color);
+  cursor: pointer;
+}
+
+}
+

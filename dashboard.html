@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es-Es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Dashboard" author="Laura Caipa" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <link rel="stylesheet" type="text/css" href="css/modal.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <script src="https://kit.fontawesome.com/a299d415c7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main>
+    <section id="contdsh">
+        <article class="bardsh">            
+            <div class="logoboton"><img src="img/0. logoforja.png" alt="Logo forja"></div>
+            <div class="grupodsh">
+            <div class="botondsh"><a href="pacientes.html"><div><i class="fa-solid fa-users"></i></div>Pacientes</a></div> 
+            <div class="botondsh"><a href=""><div><i class="fa-solid fa-syringe"></i></div>Vacunación</a></div>
+            <div class="botondsh"><a href="login.html"><div><i class="fa-solid fa-power-off"></i></div>Cerrar sesión</a></div>
+            </div>
+        </article>
+
+        <article class="contenidodsh">
+            <div class="grupocontenido">
+                <div id="btnuser">
+                    <a href=""><i class="fa-solid fa-user"></i>Carolina Loaiza</a>
+                </div>
+                <div class="welcome">
+                    <h1>BIENVENIDOS</h1>
+                </div>
+                <div class="search">
+                    <form method="post" action="" id="form-doc" name="form">
+                        <div>
+                        <label for="busqueda" class="busqueda"></label>
+                        <input type="number" id="busqueda" name="busqueda" placeholder="Digite el numero de documento" required>
+                        <a href="#modal"><button id="btnmodal" type="button" form="form"><i class="fa-solid fa-magnifying-glass"></button></i></a>
+                        <a href="#"><i class="fa-solid fa-arrow-rotate-right"></i></a>
+                        </div>
+                        <div id="error"></div>
+                    </form>
+                </div>
+                
+                <div class="imgsearch">
+                    <img src="img/13. guerreros.png" alt="guerreros" class="imguerreros">
+                </div>
+
+                <section id="modal" class="modal">
+                    <div class="modalcontainer">
+                    <figure class="modalpicture">
+                        <img src="img/0. logoforja.png" alt="" class="modalimg">
+                    </figure>
+                    <h1 class="modaltitle">Búsqueda</h1>
+                    <div class="resultado"></div>
+                    <div class="btnmsg">
+                        <a><button class="btnsi" id="accept">Si, gracias!</button></a>
+                        <a><button class="btnno" id="cancel">Cerrar</button></a>
+                    </div>
+                    </div>
+                </section>
+
+                <div class="footerdhs">
+                    <img src="img/12. franja.svg" alt="footer" >
+                </div>
+            </div>
+        </article>
+    </section>
+    </main> 
+    <script src="js/dashboard.js" defer></script>       
+</body>
+</html>
