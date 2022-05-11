@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es-Es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Registropaciente" author="Laura Caipa" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <script src="https://kit.fontawesome.com/a299d415c7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <section class="encabezado">
+        <article>            
+            <img src="img/0. logoforja.png" alt="logoforja">
+        </article>
+        <article id="btnform">
+            <a href="index.html"><button class="btnformuno"><i class="fa-solid fa-house-user"></i></button></a>
+            <a href="login.html"><button class="btnformuno"><i class="fa-solid fa-power-off"></i></button></a>
+        </article>
+        </section>
+        <article class="fotohead">
+            <img src="img/12. franja.svg" alt="banner" >
+        </article>
+    </header>
+    <main >
+        <div class="boxbuttons">
+            <h4>Estado: Activo</h4>
+            <div class="boxbutt">
+                <button type="submit" class="btnguardarc" form="form">Guardar Cambios</button>
+                <button type="submit" class="btncerrar">Cerrar</button>
+            </div>
+        </div>
+        <article class="tit">
+            <h2 id="tituno">INFORMACIÓN DEL PACIENTE</h2>
+        </article>
+        <section id="borform">
+            <article id="cajaf">
+            <form method="post" action="" for="" name="form">
+                <div class="datosp">
+                    <label for="fecha"></label>
+                    <input type="date" name="fecha" id="fecha" required>
+                    <label for="nregistro"></label>
+                    <input type="number" name="numeroregistro" id="nregistro" placeholder="Número de registro" required>
+                </div>
+                <div class="bar">
+                    <div class="texto">
+                        <h3 class="bar1">DATOS PERSONALES</h3>
+                            <div class="icono">
+                                <i class="fa-solid fa-syringe"></i>
+                            </div>
+                    </div>
+                </div>
+                <div class="datosp">
+                    <input type="text" name="name" id="name" placeholder="Nombre" required>
+                    <input type="text" name="lastname" id="lastname" placeholder="Apellidos" required>
+                    <input type="text" name="nidentificacion" id="nid" placeholder="Número de identificación" required>
+                    <input type="date" name="fechan" id="fechan" required>
+                    <input type="number" name="edad" id="edad" placeholder="Edad" required>
+                    <select name="tid" id="tid" required>
+                        <option value="0" selected>EPS</option>
+                        <option value="1">Compensar</option>
+                        <option value="2">Famisanar</option>
+                        <option value="3">Nueva EPS</option>
+                        <option value="4">Salud Total</option>
+                        <option value="5">Sanitas</option>
+                    </select>
+                </div>
+            </form>
+            </article>
+            
+            <article id="cajaf">
+                <form>
+                    <div class="bar" >
+                        <div class="texto">
+                            <h3 class="bar1">INFORMACIÓN VACUNACIÓN</h3>
+                                <div class="iconodos">
+                                    <i class="fa-solid fa-syringe"></i>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="datosp">
+                        <select name="tid" id="tid" required>
+                            <option value="0" selected>Sede</option>
+                            <option value="1">Calle 68</option>
+                            <option value="2">Calle 57</option>
+                            <option value="3">Restrepo</option>
+                            <option value="4">Soacha</option>
+                        </select>
+                        <select name="tid" id="tid" required>
+                            <option value="0" selected>Vacunador</option>
+                            <option value="1">Ana Garcia</option>
+                            <option value="2">Alexandra Torres</option>
+                            <option value="3">Alex Sierra</option>
+                            <option value="4">Laura Ramirez</option>
+                            <option value="5">Fernanda Pulido</option>
+                        </select>
+                        <input type="number" name="nidentificacionp" id="nidp" placeholder="Id Profesional" required>
+                        <input type="number" name="dosis" id="dosis" placeholder="Dosis" required>
+                    </div>
+                    <div class="pr" >
+                        <select name="tid" id="tid" required>
+                            <option value="0" selected>Biológico</option>
+                            <option value="1">Pfizer</option>
+                            <option value="2">Sinovac</option>
+                            <option value="3">Moderna</option>
+                            <option value="4">AstraZeneca</option>
+                            <option value="5">Janssen</option>
+                        </select>
+                        <input placeholder="Primera Dosis" class="textbox-n" type="text" onfocus="(this.type='Primera Dosis')" id="date1" required>
+                        <input placeholder="Segunda Dosis" class="textbox-n" type="text" onfocus="(this.type='Segunda Dosis')" id="date2" required>
+                    </div>
+                    <div class="atext">
+                        <textarea name="observación" id="obs"></textarea>
+                    </div required>
+                </form>
+                </article>
+        </section>
+    </main>
+    <footer >
+        <section id="ftform">
+        <p>©2021 FORJAEMPRESAS<p>
+        </section>
+    </footer>       
+</body>
+</html>

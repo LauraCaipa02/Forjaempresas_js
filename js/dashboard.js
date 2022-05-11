@@ -52,7 +52,7 @@ btnmodal.onclick=function buscar(e){
             <div>¿Desea actualizar la información del paciente?</div>
             `;
             accept.addEventListener('click',()=>{
-                window.setTimeout(()=>{window.location.href="formpacientes.html"},400);
+                window.setTimeout(()=>{window.location.href="formvacunas.html"},400);
             });
             cancel.addEventListener('click',()=>{
                 modal.classList.remove('show');
@@ -95,7 +95,7 @@ btnmodal.onclick=function buscar(e){
             <div>¿Desea actualizar la información del paciente?</div>
             `;
             accept.addEventListener('click',()=>{
-                window.setTimeout(()=>{window.location.href="formpacientes.html"},400);
+                window.setTimeout(()=>{window.location.href="formvacunas.html"},400);
             });
             cancel.addEventListener('click',()=>{
                 modal.classList.remove('show');
