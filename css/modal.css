@@ -32,6 +32,18 @@
     transition: opacity 0.5s;
 }
 
+.modal h1{
+    color: var(--orange-color);    
+}
+
+.modal h2{
+    font-size: 12pt;
+}
+
+.modal h3{
+    color: var(--darkblue-color);
+}
+
 .show{
     pointer-events: auto;
     opacity: 1;
@@ -49,18 +61,24 @@
     box-shadow: 0 2px 4px #191919;
 }
 
+.btnmsg{
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+}
+
 .btnsi{
     background-color: var(--darkorange-color);
     border: none;
     color: var(--white-color);
-    width: 25%;
+    width: 100%;
     height: 45px;
     border-radius: 5px;
-    margin: 5px;
+    margin-right: 15px;
     border: 1px solid var(--grey-color);
 }
 
-.btnsi:hover ,.btnno:hover{
+.btnsi:hover, .btnno:hover {
     box-shadow: 3px 3px 7px var(--dark-color);
 }
 
@@ -68,20 +86,21 @@
     background-color: var(--darkblue-color);
     border: none;
     color: var(--white-color);
-    width: 18%;
+    width: 100%;
     height: 45px;
     border-radius: 3px;
-    margin: 5px;
+    margin-left: 15px;
+    border: 1px solid var(--grey-color);
 }
 
 .modalpicture{
+    max-width: 300px;
     width: 90%;
     margin: 0 auto;
-    max-width: 400px;
     margin-bottom:1rem;
 }
 .modalpicture img{
-    width: 300px;
+    width: 200px;
     align-items: center;
     margin: auto;
 }
@@ -108,4 +127,60 @@
     font-weight: 700;
     color:#333;
     border-radius:0.4em;
+}
+
+@media screen and (min-width:768px){
+    .modal h2{
+        font-size: 14pt;
+    }
+
+    .modalcontainer{
+        max-height: 80%;
+    }
+    
+    .btnmsg{
+        display: flex;
+        justify-content: center;
+        margin: 10px auto;
+    }
+    
+    .modalpicture{
+        max-width: 400px;
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom:1rem;
+    }
+    .modalpicture img{
+        width: 300px;
+        align-items: center;
+        margin: auto;
+    }
+    
+}
+
+@media screen and (min-width:1024px){
+    .modal h2{
+        font-size: 15pt;
+    }
+    
+    .btnmsg{
+        display: flex;
+        justify-content: center;
+        margin: 5px auto;
+    }
+    
+    .modalpicture{
+        max-width: 600px;
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom:1rem;
+    }
+
+    .tablemodal{
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width:1200px){
+
 }

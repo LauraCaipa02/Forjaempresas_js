@@ -414,7 +414,7 @@ a{
   margin-bottom: 30px;
 } 
 
-  #boton2 a{
+.boton2l{
   font-size: 13px;
   text-decoration: none;
   color: var(--white-color);
@@ -531,7 +531,7 @@ a{
 
 .search{ 
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -547,15 +547,25 @@ a{
   text-align: left;
 }
 
+.boxbsearch{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto
+}
+
 .bsearch{
   display: flex;
 }
 
 .bsearch a{
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.bsearch i{
+
+.bsearch button,.bsearchf {
   background-color: var(--darkblue-color);
   margin: 0 5px ;
   font-size: 12px;
@@ -865,17 +875,39 @@ form{
   justify-content: center;
 }
 
-.btnguardarc, .btncerrar{
+.boxbutt{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boxbutt button {
   background-color:var(--darkorange-color);
   color: var(--white-color);
   border:none;
-  padding: 5px;
+  padding: 8px;
   border-radius: 7px;
   cursor: pointer;
-  height: 35px;
+  height: 37px;
   width: 31%;
   font-size: 13px;
-  margin: 5px auto;
+  display: flex;
+  align-items: center;
+  margin: auto 5px;
+}
+
+.boxbutt a{
+  background-color:var(--darkorange-color);
+  color: var(--white-color);
+  border:none;
+  border-radius: 7px;
+  cursor: pointer;
+  height: 37px;
+  width: 31%;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*Estilos pacientes*/
@@ -1287,6 +1319,8 @@ font-size: 18px;
 .boxbuttons{
   flex-direction: row;
   margin: auto ;
+  justify-content: space-between;
+  padding-left: 15px;
 }
 
 .boxbutt{
@@ -1736,14 +1770,17 @@ padding: auto 15px;
 .boxbutt{
   display: flex;
   flex-direction: row;
-  width: 30%;
+  width: 40%;
   align-items: center;
 }
 
-.btnguardarc, .btncerrar{
-  width: 50%;
+.boxbutt button{
+  display: flex;
+  justify-content: center;
+  width:40%;
   margin: 5px;
 }
+
 
 /*Estilos pacientes*/
 
@@ -2123,17 +2160,25 @@ width: 99%;
   margin: auto ;
 }
 
-.boxbutt{
+.boxbutt {
   display: flex;
   flex-direction: row;
   width: 25%;
   align-items: center;
+  justify-content: center;
 }
 
-.btnguardarc, .btncerrar{
+.boxbutt button{
+  display: flex;
+  justify-content: center;
+}
+
+.btnguardarc{
   width: 50%;
   margin: 5px;
 }
+
+
 
 /*Estilos pacientes*/
 .pacien{

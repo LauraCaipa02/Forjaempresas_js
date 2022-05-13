@@ -32,7 +32,7 @@ btnmodal.onclick=function buscar(e){
             <h2>EPS: Compensar</h2>
             <h3>PRIMERA DOSIS</h3>
 
-            <table>
+            <<table class='tablemodal'>>
             <tr>
                 <th>BIOLÓGICO</th>
                 <th>FECHA</th>
@@ -66,7 +66,7 @@ btnmodal.onclick=function buscar(e){
             <h2>C.C.: 1001235478</h2>
             <h2>EPS: Nueva EPS</h2>
             <h3>El Paciente tiene dos dosis</h3>
-            <table>
+            <table class='tablemodal'>
             <tr>
                 <th>DOSIS</th>
                 <th>BIOLÓGICO</th>
@@ -109,7 +109,7 @@ btnmodal.onclick=function buscar(e){
             <h2>C.C.: 25413574</h2>
             <h2>EPS: Famisanar</h2>
             <h3>El Paciente tiene tres dosis</h3>
-            <table>
+            <table class='tablemodal'>
             <tr>
                 <th>DOSIS</th>
                 <th>BIOLÓGICO</th>
