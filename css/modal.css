@@ -200,13 +200,17 @@
     }
 
     .modalcontainer{
-        width: 90%;
-        max-height: 83%;
+        width: 95%;
+        max-height: 90%;
     }
 
     .btnmsg{
         display: flex;
         justify-content: center;
-        margin: 10px auto 5px;
+        margin: 5px auto;
+    }
+
+    h1,h2,h3{
+        margin: 0;
     }
 }
