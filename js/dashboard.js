@@ -7,22 +7,21 @@ btnmodal.onclick=function buscar(e){
     let documento= document.getElementById('busqueda').value; // input
     let resultado=document.querySelector(".resultado"); // div para tablas 
     let modal=document.getElementById("modal");
-    let cancel=document.getElementById("cancel");
-    let accept=document.getElementById("accept");
+
     if (documento.length==0) {
-        let error=document.getElementById("error");
-        error.innerHTML=`
+        let error__dash=document.getElementById("error__dash");
+        error__dash.innerHTML=`
         <p>Ingrese un número de documento</p>`;
-        error.style.setProperty("color", "#1D1B45");
-        error.style.setProperty("text-decoration", "underline");
+        error__dash.style.setProperty("color", "#1D1B45");
+        error__dash.style.setProperty("text-decoration", "underline");
         } else if (documento.length<6) {
-        let error=document.getElementById("error");
-        error.innerHTML=`
+        let error__dash=document.getElementById("error__dash");
+        error__dash.innerHTML=`
         <p>Ingrese un número de documento válido</p>`;
-        error.style.setProperty("color", "#1D1B45");
-        error.style.setProperty("text-decoration", "underline");
+        error__dash.style.setProperty("color", "#1D1B45");
+        error__dash.style.setProperty("text-decoration", "underline");
     }else{
-        error.innerHTML=`
+        error__dash.innerHTML=`
         <p></p>`;
         if(documento== 52368795 ){
             modal.classList.add('show');
@@ -32,7 +31,7 @@ btnmodal.onclick=function buscar(e){
             <h2>EPS: Compensar</h2>
             <h3>PRIMERA DOSIS</h3>
 
-            <<table class='tablemodal'>>
+            <table class='tablemodal'>
             <tr>
                 <th>BIOLÓGICO</th>
                 <th>FECHA</th>
@@ -50,7 +49,14 @@ btnmodal.onclick=function buscar(e){
             </table>
 
             <div>¿Desea actualizar la información del paciente?</div>
+            
+            <div class="btnmsg">
+                <a><button class="btnsi" id="accept">Si, gracias!</button></a>
+                <a><button class="btnno" id="cancel">Cerrar</button></a>
+            </div>
             `;
+            let cancel=document.getElementById("cancel");
+            let accept=document.getElementById("accept");
             accept.addEventListener('click',()=>{
                 window.setTimeout(()=>{window.location.href="formvacunas.html"},400);
             });
@@ -93,7 +99,13 @@ btnmodal.onclick=function buscar(e){
             </tr>
             </table>
             <div>¿Desea actualizar la información del paciente?</div>
+            <div class="btnmsg">
+                <a><button class="btnsi" id="accept">Si, gracias!</button></a>
+                <a><button class="btnno" id="cancel">Cerrar</button></a>
+            </div>
             `;
+            let cancel=document.getElementById("cancel");
+            let accept=document.getElementById("accept");
             accept.addEventListener('click',()=>{
                 window.setTimeout(()=>{window.location.href="formvacunas.html"},400);
             });
@@ -144,11 +156,15 @@ btnmodal.onclick=function buscar(e){
             </tr>
             </table>
             <div>El paciente tiene el esquema de vacunación completo</div>
-            `;
-            accept.remove();
+            <div class="btnmsg">
+                <a><button class="btnno" id="cancel">Cerrar</button></a>
+            </div>
+            `
+            ;
+            let cancel=document.getElementById("cancel");
             cancel.addEventListener('click',()=>{
                 modal.classList.remove('show');
-            });
+            });  
         }
 
         else if(documento== 1007203506){
@@ -156,7 +172,14 @@ btnmodal.onclick=function buscar(e){
             resultado.innerHTML = `
             <h2>No existe registro de vacunación asociado al documento ingresado</h2>
             <div>¿Desea hacer el registro?</div>
-            `;
+            <div class="btnmsg">
+                <a><button class="btnsi" id="accept">Si, gracias!</button></a>
+                <a><button class="btnno" id="cancel">Cerrar</button></a>
+            </div>
+            `
+            ;
+            let cancel=document.getElementById("cancel");
+            let accept=document.getElementById("accept");
             accept.addEventListener('click',()=>{
                 window.setTimeout(()=>{window.location.href="formpacientes.html"},400);
             });
@@ -170,7 +193,13 @@ btnmodal.onclick=function buscar(e){
             resultado.innerHTML = `
             <h2>No existe registro de vacunación asociado al documento ingresado</h2>
             <div>¿Desea hacer el registro?</div>
+            <div class="btnmsg">
+                <a><button class="btnsi" id="accept">Si, gracias!</button></a>
+                <a><button class="btnno" id="cancel">Cerrar</button></a>
+            </div>
             `;
+            let cancel=document.getElementById("cancel");
+            let accept=document.getElementById("accept");
             accept.addEventListener('click',()=>{
                 window.setTimeout(()=>{window.location.href="formpacientes.html"},400);
             });

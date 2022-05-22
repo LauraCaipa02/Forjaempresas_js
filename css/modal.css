@@ -30,6 +30,7 @@
     left:0;
     right: 0;
     transition: opacity 0.5s;
+    z-index: 1;
 }
 
 .modal h1{
@@ -55,7 +56,7 @@
     width: 90%;
     max-width: 600px;
     max-height: 90%;
-    padding: 2.4em 1.5em;
+    padding: 2.4em 1.5em 1.5em;
     border-radius: 1em;
     text-align: center;
     box-shadow: 0 2px 4px #191919;
@@ -129,12 +130,19 @@
     border-radius:0.4em;
 }
 
+.btnmsg{
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+}
+
 @media screen and (min-width:768px){
     .modal h2{
-        font-size: 14pt;
+        font-size: 12pt;
     }
 
     .modalcontainer{
+        width: 80%;
         max-height: 80%;
     }
     
@@ -145,13 +153,13 @@
     }
     
     .modalpicture{
-        max-width: 400px;
+        max-width: 350px;
         width: 90%;
         margin: 0 auto;
         margin-bottom:1rem;
     }
     .modalpicture img{
-        width: 300px;
+        width: 250px;
         align-items: center;
         margin: auto;
     }
@@ -160,7 +168,7 @@
 
 @media screen and (min-width:1024px){
     .modal h2{
-        font-size: 15pt;
+        font-size: 14pt;
     }
     
     .btnmsg{
@@ -169,6 +177,11 @@
         margin: 5px auto;
     }
     
+    .modalcontainer{
+        width: 90%;
+        max-height: 90%;
+    }
+
     .modalpicture{
         max-width: 600px;
         width: 90%;
@@ -182,5 +195,18 @@
 }
 
 @media screen and (min-width:1200px){
+    .modal h2{
+        font-size: 15   pt;
+    }
 
+    .modalcontainer{
+        width: 90%;
+        max-height: 83%;
+    }
+
+    .btnmsg{
+        display: flex;
+        justify-content: center;
+        margin: 10px auto 5px;
+    }
 }

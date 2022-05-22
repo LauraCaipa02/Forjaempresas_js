@@ -411,7 +411,7 @@ a{
   text-align: center;
   cursor: pointer;
   padding: 8px 20px ;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 } 
 
 .boton2l{
@@ -427,6 +427,13 @@ a{
   cursor: pointer;
   color: var(--dark-color);
   text-decoration: underline;
+}
+
+#error{
+  display: flex;
+  align-items: center;
+  color: var(--orange-color);
+  font-weight: 600;
 }
 
 /*Estilos dashboard*/
@@ -605,6 +612,7 @@ a{
   width: 100%;
   position: absolute;
   top:69.7vh;
+  z-index: 0;
 }
 .footerdhs img{
   width: 100%;
