@@ -29,11 +29,11 @@
             <h2 id="tituno">REGISTRO USUARIO NUEVO</h2>
         </article>
         <section id="borform">
-            <article id="cajaf">
-            <form>
+            <form action="" method="post">
+                <fieldset id="cajaf">
                 <div class="initial">
-                    <input type="date" name="fecha" id="fecha">
-                    <input type="number" name="numeroregistro" id="nregisto" placeholder="N registro">
+                    <input type="date" name="fecha" value="fecha" id="fecha" required>
+                    <input type="number" name="numeroregistro" value="numeroregistro" id="nregisto" placeholder="N registro" required>
                 </div>
                 <div class="bar">
                     <div class="texto">
@@ -44,17 +44,17 @@
                     </div>
                 </div>
                 <div class="datosp">
-                    <input type="text" name="name" id="name" placeholder="Nombre">
-                    <input type="text" name="lastname" id="lastname" placeholder="Apellido">
-                    <input type="text" name="nidentificacion" id="nid" placeholder="Número de identificación">
-                    <select name="tid" id="tid">
+                    <input type="text" name="name" id="name" placeholder="Nombre" required>
+                    <input type="text" name="lastname" id="lastname" placeholder="Apellido" required>
+                    <input type="text" name="nidentificacion" id="nid" placeholder="Número de identificación" required>
+                    <select name="tid" id="tid" required>
                         <option value="0" selected>Tipo de documento</option>
                         <option value="1">Cédula de ciudadania</option>
                         <option value="2">Cédula de Extranjeria</option>
                         <option value="3">Tarjeta de identidad</option>
                         <option value="4">Registro civil</option>
-                    <input type="date" name="fechan" id="fechan">
-                    <input type="number" name="edad" id="edad" placeholder="Edad">
+                    <input type="date" name="fechan" id="fechan"required>
+                    <input type="number" name="edad" id="edad" placeholder="Edad"required>
                 </div>
                 <div class="bar">
                     <div class="texto">
@@ -65,16 +65,16 @@
                     </div>
                 </div>
                 <div class="datosp">
-                    <select name="dep" id="dep">
+                    <select name="dep" id="dep" required>
                         <option value="0" selected>Departamento de residencia</option>
                     </select>
-                    <select name="mun" id="mun">
+                    <select name="mun" id="mun" required>
                         <option value="0" selected>Municipio de residencia</option>
                     </select>
-                    <input type="text" name="dir" id="dir" placeholder="Dirección">
-                    <input type="email" name="email" id="email" placeholder="Correo">
-                    <input type="number" name="tel" id="tel" placeholder="Teléfono Fijo">
-                    <input type="number" name="cel" id="cel" placeholder="Celular">                    
+                    <input type="text" name="dir" id="dir" placeholder="Dirección" required>
+                    <input type="email" name="email" id="email" placeholder="Correo" required>
+                    <input type="number" name="tel" id="tel" placeholder="Teléfono Fijo"required>
+                    <input type="number" name="cel" id="cel" placeholder="Celular"required>                    
                 </div>
                 <div class="bar">
                     <div class="texto">
@@ -85,17 +85,17 @@
                     </div>
                 </div>
                 <div class="pr">
-                    <select name="pree" id="pree">
+                    <select name="pree" id="pree"required>
                         <option value="0" selected>Preexistencias</option>
                     </select>
-                    <select name="disc" id="disc">
+                    <select name="disc" id="disc"required>
                         <option value="0" selected>Discapacidad</option>
                     </select>
-                    <input type="text" name="alergia" id="alergia" placeholder="Alergias">
+                    <input type="text" name="alergia" id="alergia" placeholder="Alergias"required>
                 </div>
                 <div class="radio">
                     <label for="pruebap">¿El paciente se ha realizado la prueba del covid con anterioridad y esta ha salido positiva?</label>
-                    <div class="opradio">
+                    <div class="opradio" required>
                         SI<input name="pruebap" id="pruebap" type="radio" > 
                         NO<input name="pruebap" id="pruebap" type="radio" > 
                     </div>
@@ -104,10 +104,10 @@
                         SI<input name="pruebap" id="pruebap" type="radio" > 
                         NO<input name="pruebap" id="pruebap" type="radio" > 
                     </div>
-                </div>
+                </div>                
+            </fieldset>
+                <a href="pacientes.html"><button class="btnguardar">Guardar</button></a>
             </form>
-        </article>
-            <button type="submit" class="btnguardar">Guardar</button>
         </section>
     </main>
     <footer >

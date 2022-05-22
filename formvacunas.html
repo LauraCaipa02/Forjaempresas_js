@@ -25,22 +25,23 @@
         </article>
     </header>
     <main >
-        <div class="boxbuttons">
-            <h4>Estado: Activo</h4>
-            <div class="boxbutt">
-                <button type="submit" class="btnguardarc" form="form">Guardar Cambios</button>
-                <a href="dashboard.html" class="btncerrar"type="submit" >Cerrar</button></a>
+        <form action="" method="post">
+            <div class="boxbuttons">
+                <h4>Estado: Activo</h4>
+                <div class="boxbutt">
+                    <a href="pacientes.html"><button class="btnguardarc">Guardar Cambios</button></a>
+                    <a href="dashboard.html" class="btncerrar">Cerrar</button></a>
+                </div>
             </div>
-        </div>
-        <article class="tit">
-            <h2 id="tituno">INFORMACIÓN DEL PACIENTE</h2>
-        </article>
-        <section id="borform">
-            <article id="cajaf">
-            <form method="post" action="" for="" name="form">
+            <div class="tit">
+                <h2 id="tituno">INFORMACIÓN DEL PACIENTE</h2>
+            </div>
+            <fieldset id="cajaf">
                 <div class="datosp">
-                    <input type="date" name="fecha" id="fecha" required>
-                    <input type="number" name="numeroregistro" id="nregistro" placeholder="Número de registro" required>
+                    <label for="fecha"></label>
+                    <input type="date" name="fecha" value="fecha" id="fecha" required>
+                    <label for="numeroregistro"></label>
+                    <input type="number" name="numeroregistro" value="numeroregistro" id="nregistro" placeholder="Número de registro" required>
                 </div>
                 <div class="bar">
                     <div class="texto">
@@ -65,56 +66,54 @@
                         <option value="5">Sanitas</option>
                     </select>
                 </div>
-            </form>
-            </article>
+            </fieldset>
+
+            <fieldset id="cajaf">
+                <div class="bar" >
+                    <div class="texto">
+                        <h3 class="bar1">INFORMACIÓN VACUNACIÓN</h3>
+                            <div class="iconodos">
+                                <i class="fa-solid fa-syringe"></i>
+                            </div>
+                    </div>
+                </div>
+                <div class="datosp">
+                    <select name="tid" id="tid" required>
+                        <option value="0" selected>Sede</option>
+                        <option value="1">Calle 68</option>
+                        <option value="2">Calle 57</option>
+                        <option value="3">Restrepo</option>
+                        <option value="4">Soacha</option>
+                    </select>
+                    <select name="tid" id="tid" required>
+                        <option value="0" selected>Vacunador</option>
+                        <option value="1">Ana Garcia</option>
+                        <option value="2">Alexandra Torres</option>
+                        <option value="3">Alex Sierra</option>
+                        <option value="4">Laura Ramirez</option>
+                        <option value="5">Fernanda Pulido</option>
+                    </select>
+                    <input type="number" name="nidentificacionp" id="nidp" placeholder="Id Profesional" required>
+                    <input type="number" name="dosis" id="dosis" placeholder="Dosis" required>
+                </div>
+                <div class="pr" >
+                    <select name="tid" id="tid" required>
+                        <option value="0" selected>Biológico</option>
+                        <option value="1">Pfizer</option>
+                        <option value="2">Sinovac</option>
+                        <option value="3">Moderna</option>
+                        <option value="4">AstraZeneca</option>
+                        <option value="5">Janssen</option>
+                    </select>
+                    <input placeholder="Primera Dosis" class="textbox-n" type="text" onfocus="(this.type='Primera Dosis')" id="date1" required>
+                    <input placeholder="Segunda Dosis" class="textbox-n" type="text" onfocus="(this.type='Segunda Dosis')" id="date2" required>
+                </div>
+                <div class="atext">
+                    <textarea name="observación" id="obs" placeholder="Observaciones adicionales"></textarea>
+                </div required>
+            </fieldset>
             
-            <article id="cajaf">
-                <form>
-                    <div class="bar" >
-                        <div class="texto">
-                            <h3 class="bar1">INFORMACIÓN VACUNACIÓN</h3>
-                                <div class="iconodos">
-                                    <i class="fa-solid fa-syringe"></i>
-                                </div>
-                        </div>
-                    </div>
-                    <div class="datosp">
-                        <select name="tid" id="tid" required>
-                            <option value="0" selected>Sede</option>
-                            <option value="1">Calle 68</option>
-                            <option value="2">Calle 57</option>
-                            <option value="3">Restrepo</option>
-                            <option value="4">Soacha</option>
-                        </select>
-                        <select name="tid" id="tid" required>
-                            <option value="0" selected>Vacunador</option>
-                            <option value="1">Ana Garcia</option>
-                            <option value="2">Alexandra Torres</option>
-                            <option value="3">Alex Sierra</option>
-                            <option value="4">Laura Ramirez</option>
-                            <option value="5">Fernanda Pulido</option>
-                        </select>
-                        <input type="number" name="nidentificacionp" id="nidp" placeholder="Id Profesional" required>
-                        <input type="number" name="dosis" id="dosis" placeholder="Dosis" required>
-                    </div>
-                    <div class="pr" >
-                        <select name="tid" id="tid" required>
-                            <option value="0" selected>Biológico</option>
-                            <option value="1">Pfizer</option>
-                            <option value="2">Sinovac</option>
-                            <option value="3">Moderna</option>
-                            <option value="4">AstraZeneca</option>
-                            <option value="5">Janssen</option>
-                        </select>
-                        <input placeholder="Primera Dosis" class="textbox-n" type="text" onfocus="(this.type='Primera Dosis')" id="date1" required>
-                        <input placeholder="Segunda Dosis" class="textbox-n" type="text" onfocus="(this.type='Segunda Dosis')" id="date2" required>
-                    </div>
-                    <div class="atext">
-                        <textarea name="observación" id="obs"></textarea>
-                    </div required>
-                </form>
-                </article>
-        </section>
+        </form>
     </main>
     <footer >
         <section id="ftform">
