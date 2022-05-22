@@ -742,6 +742,18 @@ a{
   top: 8px;
 }  
 
+.picono{
+  position: absolute;
+  left: -32px;
+  top: 4px;
+}   
+    
+.piconodos{
+  position: absolute;
+  left: -25px;
+  top: 4px;
+} 
+
 .datosp{
   width: 100%;
   display: flex;
@@ -1300,13 +1312,23 @@ font-size: 18px;
 
 .icono{
   left: -190px;
-  top: 14px;
+  top: 8px;
 }   
   
 .iconodos{
   left: -155px;
-  top: 14px;
-  }  
+  top: 8px;
+}  
+
+.picono{
+  left: -190px;
+  top: 4px;
+}   
+  
+.piconodos{
+  left: -155px;
+  top: 4px;
+}  
 
 .radio label{
     width: 95%;
@@ -1712,7 +1734,15 @@ padding: auto 15px;
   
 .iconodos{
   left: -320px;
-  }  
+}  
+
+.picono{
+  left: -350px;
+}   
+  
+.piconodos{
+  left: -320px;
+}  
   
 .bar1 {
   font-size: 16px;
@@ -2106,15 +2136,26 @@ width: 99%;
 } 
 
 .icono{
-  left: -600px;
-  top: 18px;
+  left: -400px;
+  top: 10px;
 }   
-  
+
 .iconodos{
   position: absolute;
-  left: -565px;
-  top: 18px;
-  }  
+  left: -360px;
+  top: 10px;
+}  
+
+.picono{
+  left: -400px;
+  top: 8px;
+}   
+    
+.piconodos{
+  position: absolute;
+  left: -360px;
+  top: 8px;
+} 
   
 .bar1 {
   font-size: 18px;
