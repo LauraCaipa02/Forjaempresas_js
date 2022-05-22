@@ -2042,7 +2042,7 @@ td{
 }
 
 #btnuser{
-  width: 16%;
+  max-width: 20%;
   height: 60px;
 }
     
